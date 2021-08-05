@@ -57,3 +57,55 @@ nav a::before{
 nav a:hover::before{
     width: 100%;
 }
+footer
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+}
+
+footer div
+{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    font-family: cursive;
+    font-weight: bolder;
+    padding: 0%;
+}
+footer div p
+{padding-right: 20px; margin: 0;}
+
+.form {
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    text-align: left;
+}
+form div
+{
+    padding-top: 15px;
+}
+form div label
+{
+    padding-bottom: 10px;
+}
+form div input
+{
+    height: 0.8cm;
+    width: 10cm;
+    border-radius: 5px;
+}
+form div input[type="file"]
+{
+    border-radius: 0px;
+}
+form div textarea
+{
+    border-radius: 5px;
+}

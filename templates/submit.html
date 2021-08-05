@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form">
+    <form action="verify" method="POST" enctype="multipart/form-data">
+        {%csrf_token%}
+        <div>
+            <label for="fname">First Name</label><br>
+            <input type="text" name="fname" id="fname" placeholder="Enter Your First Name">
+        </div>
+        <div>
+            <label for="lname">Last Name</label><br>
+            <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name">
+        </div>
+        <div>
+            <label for="address">Address</label><br>
+            <textarea name="address" id="address" cols="50" rows="10" 
+            placeholder="Enter address present in aadhaar"></textarea>
+        </div>
+        <div>
+            <label for="aadhaarID">Aadhaar Number</label><br>
+            <input type="text" name="aadhaarID" id="aadhaarID" placeholder="12 digit aadhaar number">
+        </div>
+        <div>
+            <label for="aadhaarUpload">Upload Aadhaar</label><br>
+            <input type="file" name="aadhaarUpload" id="aadhaarUpload">
+        </div>
+        <div>
+            <label for="pic">Upload Your Passport size photo</label><br>
+            <input type="file" name="pic" id="pic">
+        </div>
+        <div><button type="submit" value="Submit">Submit</button></div>
+    
+    </form>
+</div>
+{% endblock %}

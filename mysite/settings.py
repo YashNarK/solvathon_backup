@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+  
 from pathlib import Path
-import os
+import os         
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+ 
 ROOT_URLCONF = 'mysite.urls'
  
 TEMPLATES = [
@@ -84,7 +84,7 @@ DATABASES = {
         'HOST':'localhost',
         'PORT':'5432'
     }
-}
+} 
 
 
 # Password validation
@@ -122,9 +122,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_ROOT=os.path.join(BASE_DIR,'var','static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[os.path.join(BASE_DIR,'static'),'narendranai.pythonanywhere.com/static','/var/www/static']
+STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
+STATIC_ROOT=os.path.join(BASE_DIR,'assets')
 
 
 # Default primary key field type
